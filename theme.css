@@ -1,0 +1,235 @@
+/* ARWAESTHETICS - Color Themes & Customization */
+
+/* Default Theme (Cyan, Magenta, Purple) */
+:root {
+    --primary: #00d9ff;
+    --secondary: #ff006e;
+    --tertiary: #8338ec;
+    --accent: #ffbe0b;
+    --dark: #0a0e27;
+    --darker: #050914;
+    --light: #ffffff;
+    --text: #e0e0e0;
+}
+
+/* Alternative Theme 1: Neon Pink & Blue */
+.theme-neon {
+    --primary: #00ffff;
+    --secondary: #ff1493;
+    --tertiary: #9d4edd;
+    --accent: #ffea00;
+}
+
+/* Alternative Theme 2: Electric Purple & Green */
+.theme-electric {
+    --primary: #39ff14;
+    --secondary: #9d00ff;
+    --tertiary: #00d9ff;
+    --accent: #ff006e;
+}
+
+/* Alternative Theme 3: Gold & Teal */
+.theme-luxury {
+    --primary: #00d4ff;
+    --secondary: #ffd700;
+    --tertiary: #20b2aa;
+    --accent: #ff69b4;
+}
+
+/* Animation Speed Controls */
+.speed-slow {
+    --animation-speed: 2s;
+}
+
+.speed-normal {
+    --animation-speed: 1s;
+}
+
+.speed-fast {
+    --animation-speed: 0.5s;
+}
+
+/* Typography Options */
+.font-modern {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-elegant {
+    font-family: 'Georgia', serif;
+}
+
+.font-monospace {
+    font-family: 'Courier New', monospace;
+}
+
+/* Button Styles */
+.btn-modern {
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-rounded {
+    border-radius: 10px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+}
+
+.btn-sharp {
+    border-radius: 0px;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+}
+
+/* Card Styles */
+.card-gradient {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.card-solid {
+    background: rgba(10, 14, 39, 0.8);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+.card-minimal {
+    background: transparent;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+/* Shadow Styles */
+.shadow-glow {
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+}
+
+.shadow-intense {
+    box-shadow: 0 0 50px rgba(0, 217, 255, 0.6), 0 0 80px rgba(255, 0, 110, 0.3);
+}
+
+.shadow-subtle {
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.15);
+}
+
+/* Text Effects */
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--tertiary), var(--accent));
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 8s ease infinite;
+}
+
+.text-glow {
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+.text-shadow-intense {
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.3), 0 0 40px rgba(255, 0, 110, 0.2);
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-rotate {
+    transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+    transform: rotate(3deg);
+}
+
+/* Spacing Utilities */
+.spacing-compact {
+    gap: 1rem;
+}
+
+.spacing-normal {
+    gap: 2rem;
+}
+
+.spacing-relaxed {
+    gap: 3rem;
+}
+
+/* Blur Effects */
+.blur-light {
+    backdrop-filter: blur(5px);
+}
+
+.blur-medium {
+    backdrop-filter: blur(10px);
+}
+
+.blur-heavy {
+    backdrop-filter: blur(20px);
+}
+
+/* Border Styles */
+.border-neon {
+    border: 2px solid var(--primary);
+    box-shadow: inset 0 0 20px rgba(0, 217, 255, 0.1);
+}
+
+.border-gradient {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(255, 0, 110, 0.2));
+    padding: 2px;
+}
+
+/* Accessibility */
+.high-contrast {
+    --text: #ffffff;
+    --dark: #000000;
+    --darker: #000000;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #00d9ff;
+        --secondary: #ff006e;
+        --tertiary: #8338ec;
+        --accent: #ffbe0b;
+    }
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary: #0080b0;
+        --secondary: #cc0052;
+        --tertiary: #6300b0;
+        --accent: #cc9900;
+        --dark: #f5f5f5;
+        --darker: #ffffff;
+        --text: #333333;
+    }
+}
